@@ -3,7 +3,6 @@ import pkgutil
 import sys
 import importlib.util
 import time
-from webbrowser import Elinks
 if not hasattr(pkgutil, "get_loader"):
     def get_loader(name):
         # Special-case __main__ (running script): __spec__ is often None
