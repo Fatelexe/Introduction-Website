@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aaron — Skills</title>
+
+
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}" />
+</head>
+
+<body>
+  <div class="container">
+
+
+    <header class="nav" aria-label="Primary">
+      <div class="brand">
+        <div class="logo"></div>
+        <div>
+          <div class="lang-content" data-lang="en">Aaron S</div>
+          <div class="lang-content" data-lang="de">Aaron S</div>
+          <div class="lang-content" data-lang="zh">Aaron S</div>
+          <div class="muted small lang-content" data-lang="en">Student • Novice Developer • learning Python</div>
+          <div class="muted small lang-content" data-lang="de">Schüler • Einsteiger-Entwickler • Lernt gerade Python</div>
+          <div class="muted small lang-content" data-lang="zh">学生 • 初级开发者 • 正在学习 Python</div>
+        </div>
+      </div>
+
+      <nav class="navlinks">
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('home') }}">Home</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('home') }}">Home</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('home') }}">首页</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('about') }}">About</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('about') }}">Vorstellung</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('about') }}">介绍</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('project') }}">Projects</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('project') }}">Projekte</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('project') }}">项目</a>
+        <a class="pill primary lang-content" data-lang="en" href="{{ url_for('skills') }}">Skills</a>
+        <a class="pill primary lang-content" data-lang="de" href="{{ url_for('skills') }}">Fähigkeiten</a>
+        <a class="pill primary lang-content" data-lang="zh" href="{{ url_for('skills') }}">技能</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('contact') }}">Leave a Message for me!</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('contact') }}">Hinterlasse mir eine Nachricht!</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('contact') }}">请给我留言！</a>
+
+      </nav>
+    </header>
+
+
+    <section class="card" style="margin-top:24px;">
+      <h1 class="lang-content" data-lang="en">My Skills</h1>
+      <h1 class="lang-content" data-lang="de">Meine Fähigkeiten</h1>
+      <h1 class="lang-content" data-lang="zh">我的技能</h1>
+
+      <p class="muted lang-content" data-lang="en">
+        An overview of my current skills.
+      </p>
+      <p class="muted lang-content" data-lang="de">
+        Eine Übersicht über meine aktuellen Fähigkeiten.
+      </p>
+      <p class="muted lang-content" data-lang="zh">
+        我目前技能的概览。
+      </p>
+    </section>
+
+
+    <section class="grid" style="margin-top:16px;">
+
+
+      <div class="card">
+        <h2 class="lang-content" data-lang="en">Programming</h2>
+        <h2 class="lang-content" data-lang="de">Programmierung</h2>
+        <h2 class="lang-content" data-lang="zh">编程</h2>
+
+        <ul class="list">
+          <li class="lang-content" data-lang="en">
+            <b>Python</b> — scripts, automation, small applications
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>Python</b> — Skripte, Automatisierung, kleine Anwendungen
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>Python</b> — 脚本、自动化、小型应用
+          </li>
+
+          <li class="lang-content" data-lang="en">
+            <b>Scratch</b> — beginner programming tool
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>Scratch</b> — Programmiertool für Anfänger
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>Scratch</b> — 初学者编程工具
+          </li>
+
+          <li class="lang-content" data-lang="en">
+            <b>SQL</b> — basic queries and data handling
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>SQL</b> — grundlegende Abfragen und Datenverarbeitung
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>SQL</b> — 基础查询与数据处理
+          </li>
+        </ul>
+
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">Scratch</span>
+          <span class="chip">SQL</span>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <h2 class="lang-content" data-lang="en">Web Development</h2>
+        <h2 class="lang-content" data-lang="de">Webentwicklung</h2>
+        <h2 class="lang-content" data-lang="zh">Web 开发</h2>
+
+        <ul class="list">
+          <li class="lang-content" data-lang="en">
+            <b>HTML</b> — semantic, clean structure and functions
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>HTML</b> — semantische, saubere Struktur und Funktionen
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>HTML</b> — 语义化、清晰的结构和功能
+          </li>
+
+          <li class="lang-content" data-lang="en">
+            <b>CSS</b> — responsive layouts and styling<br></br>
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>CSS</b> — responsive Layouts und Styling<br></br>
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>CSS</b> — 响应式布局和样式<br></br>
+          </li>
+
+          <li class="lang-content" data-lang="en">
+            <b>Flask</b> — basic backend routing and templates
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>Flask</b> — grundlegendes Backend-Routing und Templates
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>Flask</b> — 基础后端路由和模板
+          </li>
+        </ul>
+
+        <div class="chips">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">Responsive Design</span>
+          <span class="chip">Flask</span>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <h2 class="lang-content" data-lang="en">Data</h2>
+        <h2 class="lang-content" data-lang="de">Daten</h2>
+        <h2 class="lang-content" data-lang="zh">数据</h2>
+
+        <ul class="list">
+          <li class="lang-content" data-lang="en">
+            <b>Api</b> — Working with APIs and JSON data
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>Api</b> — Arbeiten mit APIs und JSON-Daten
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>Api</b> — 使用 API 和 JSON 数据
+          </li>
+
+          <li class="lang-content" data-lang="en">
+            <b>Creating Databases</b> — Data Processing and Storage
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>Datenbanken erstellen</b> — Datenverarbeitung und Speicherung
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>创建数据库</b> — 数据处理与存储
+          </li>
+
+          <li class="lang-content" data-lang="en">
+            <b>Filtering</b> — Simple data cleaning and processing
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>Filtern</b> — Einfache Datenbereinigung und -verarbeitung
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>过滤</b> — 简单的数据清理与处理
+          </li>
+        </ul>
+
+        <div class="chips">
+          <span class="chip">APIs</span>
+          <span class="chip">JSON</span>
+          <span class="chip">Data</span>
+          <span class="chip">DB</span>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <h2 class="lang-content" data-lang="en">Game & Creative</h2>
+        <h2 class="lang-content" data-lang="de">Spiele & Kreatives</h2>
+        <h2 class="lang-content" data-lang="zh">游戏与创意</h2>
+
+        <ul class="list">
+          <li class="lang-content" data-lang="en">
+            <b>Programming</b> — Basic Game Programming mechanics
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>Programmierung</b> — Grundlegende Spielprogrammierungsmechaniken
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>编程</b> — 基础游戏编程机制
+          </li>
+
+          <li class="lang-content" data-lang="en">
+            <b>Design/Layouts</b> — Basic UI and menu design
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>Design/Layouts</b> — Grundlegendes UI- und Menüdesign
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>设计 / 布局</b> — 基础 UI 和菜单设计
+          </li>
+        </ul>
+
+        <div class="chips">
+          <span class="chip lang-content" data-lang="en">Game Design</span>
+          <span class="chip lang-content" data-lang="de">Spieldesign</span>
+          <span class="chip lang-content" data-lang="zh">游戏设计</span>
+
+          <span class="chip lang-content" data-lang="en">Game Development</span>
+          <span class="chip lang-content" data-lang="de">Spieleentwicklung</span>
+          <span class="chip lang-content" data-lang="zh">游戏开发</span>
+
+          <span class="chip ">UI</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="lang-content" data-lang="en">Tools</h2>
+        <h2 class="lang-content" data-lang="de">Werkzeuge</h2>
+        <h2 class="lang-content" data-lang="zh">工具</h2>
+
+        <ul class="list">
+          <li class="lang-content" data-lang="en">
+            <b>Git & GitHub</b> — version control and collaboration
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>Git & GitHub</b> — Versionskontrolle und Zusammenarbeit
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>Git & GitHub</b> — 版本控制与协作
+          </li>
+
+          <li class="lang-content" data-lang="en">
+            <b>VS Code</b> — coding and debugging for HTML and CSS
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>VS Code</b> — Programmieren und Debuggen für HTML und CSS
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>VS Code</b> — 用于 HTML 和 CSS 的编码与调试
+          </li>
+
+          <li class="lang-content" data-lang="en">
+            <b>Python</b> — Programming Language
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>Python</b> — Programmiersprache
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>Python</b> — 编程语言
+          </li>
+        </ul>
+
+        <div class="chips">
+          <span class="chip">Git</span>
+          <span class="chip">GitHub</span>
+          <span class="chip">VS Code</span>
+          <span class="chip">Python</span>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <h2 class="lang-content" data-lang="en">Soft Skills</h2>
+        <h2 class="lang-content" data-lang="de">Soziale Kompetenzen</h2>
+        <h2 class="lang-content" data-lang="zh">软技能</h2>
+
+        <ul class="list">
+          <li class="lang-content" data-lang="en">
+            <b>Error</b> — Problem solving
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>Fehler</b> — Problemlösung
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>错误</b> — 问题解决
+          </li>
+
+          <li class="lang-content" data-lang="en">
+            <b>Logic</b> — Logical thinking
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>Logik</b> — Logisches Denken
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>逻辑</b> — 逻辑思维
+          </li>
+
+          <li class="lang-content" data-lang="en">
+            <b>Learn</b> — Self-learning
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>Lernen</b> — Selbstständiges Lernen
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>学习</b> — 自主学习
+          </li>
+
+          <li class="lang-content" data-lang="en">
+            <b>Focus</b> — Attention to detail
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>Fokus</b> — Aufmerksamkeit für Details
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>专注</b> — 注重细节
+          </li>
+        </ul>
+
+        <div class="chips">
+          <span class="chip lang-content" data-lang="en">Problem Solving</span>
+          <span class="chip lang-content" data-lang="de">Problemlösung</span>
+          <span class="chip lang-content" data-lang="zh">问题解决</span>
+
+          <span class="chip lang-content" data-lang="en">Critical Thinking</span>
+          <span class="chip lang-content" data-lang="de">Kritisches Denken</span>
+          <span class="chip lang-content" data-lang="zh">批判性思维</span>
+
+          <span class="chip lang-content" data-lang="en">Motivation</span>
+          <span class="chip lang-content" data-lang="de">Motivation</span>
+          <span class="chip lang-content" data-lang="zh">动力</span>
+
+          <span class="chip lang-content" data-lang="en">Attention</span>
+          <span class="chip lang-content" data-lang="de">Aufmerksamkeit</span>
+          <span class="chip lang-content" data-lang="zh">注意力</span>
+        </div>
+      </div>
+
+    </section>
+    <div class="lang-switch">
+      <button class="lang-btn btn" onclick="setLang('en')">EN</button>
+      <button class="lang-btn btn" onclick="setLang('de')">DE</button>
+      <button class="lang-btn btn" onclick="setLang('zh')">中文</button>
+    </div>
+    <footer>
+      © <span id="year"></span> Aaron S • Published on 31/12/2025
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script>
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll(".lang-content").forEach(el => {
+      el.hidden = el.dataset.lang !== lang;
+    });
+    document.querySelectorAll("[data-placeholder-en]").forEach(el => {
+      el.placeholder = el.dataset["placeholder" + document.documentElement.lang.charAt(0).toUpperCase() + document.documentElement.lang.slice(1)];
+    });
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+      btn.classList.toggle("active", btn.textContent.includes(lang.toUpperCase()) || btn.textContent === "中文" && lang === "zh");
+    });
+
+    localStorage.setItem("site-lang", lang);
+  }
+
+  // Remember language on reload
+  const savedLang = localStorage.getItem("site-lang") || "en";
+  setLang(savedLang);
+</script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aaron — Contact</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}" />
+</head>
+<script>
+  function autoResize(textarea) {
+    textarea.style.height = "6rem";
+    const maxHeight = 16 * 16; // 16rem
+    textarea.style.height = Math.min(textarea.scrollHeight, maxHeight) + "px";
+  }
+</script>
+<body>
+  <div class="container">
+
+    <header class="nav" aria-label="Primary">
+      <div class="brand">
+        <div class="logo"></div>
+        <div>
+          <div class="lang-content" data-lang="en">Aaron S</div>
+          <div class="lang-content" data-lang="de">Aaron S</div>
+          <div class="lang-content" data-lang="zh">Aaron S</div>
+          <div class="muted small lang-content" data-lang="en">Student • Novice Developer • learning Python</div>
+          <div class="muted small lang-content" data-lang="de">Schüler • Einsteiger-Entwickler • Lernt gerade Python</div>
+          <div class="muted small lang-content" data-lang="zh">学生 • 初级开发者 • 正在学习 Python</div>
+        </div>
+      </div>
+
+      <nav class="navlinks">
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('home') }}">Home</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('home') }}">Home</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('home') }}">首页</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('about') }}">About</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('about') }}">Vorstellung</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('about') }}">介绍</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('project') }}">Projects</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('project') }}">Projekte</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('project') }}">项目</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('skills') }}">Skills</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('skills') }}">Fähigkeiten</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('skills') }}">技能</a>
+        <a class="pill primary lang-content" data-lang="en" href="{{ url_for('contact') }}">Leave a Message for me!</a>
+        <a class="pill primary lang-content" data-lang="de" href="{{ url_for('contact') }}">Hinterlasse mir eine Nachricht!</a>
+        <a class="pill primary lang-content" data-lang="zh" href="{{ url_for('contact') }}">请给我留言！</a>
+
+      </nav>
+    </header>
+
+    <section class="card" style="margin-top:24px;">
+      <h1 class="lang-content" data-lang="en">Contact Me</h1>
+      <h1 class="lang-content" data-lang="de">Kontakt</h1>
+      <h1 class="lang-content" data-lang="zh">联系我</h1>
+
+      <p class="muted lang-content" data-lang="en">
+        Have a question, idea, or just want to say hi?
+        Feel free to send me a message below.
+      </p>
+      <p class="muted lang-content" data-lang="de">
+        Hast du eine Frage, eine Idee oder willst einfach Hallo sagen?
+        Schreib mir gerne unten eine Nachricht.
+      </p>
+      <p class="muted lang-content" data-lang="zh">
+        有问题、想法，或者只是想打个招呼吗？
+        欢迎在下面给我留言。
+      </p>
+    </section>
+
+    <section class="grid" style="margin-top:16px;">
+
+      <div class="card">
+          <h2 class="lang-content" data-lang="en">Get in Touch</h2>
+          <h2 class="lang-content" data-lang="de">Kontakt aufnehmen</h2>
+          <h2 class="lang-content" data-lang="zh">取得联系</h2>
+        <p class="lang-content" data-lang="en">
+            I’m always open to discussing new projects, learning opportunities,
+            or collaborations.
+        </p>
+        <p class="lang-content" data-lang="de">
+            Ich bin immer offen für Gespräche über neue Projekte, Lernmöglichkeiten
+            oder Zusammenarbeit.
+        </p>
+        <p class="lang-content" data-lang="zh">
+            我随时欢迎交流新项目、学习机会或合作。
+        </p>
+
+        <ul class="list">
+           <li class="lang-content" data-lang="en"><b>Email:</b> dragon44329864@gmail.com</li>
+           <li class="lang-content" data-lang="de"><b>E-Mail:</b> dragon44329864@gmail.com</li>
+           <li class="lang-content" data-lang="zh"><b>邮箱：</b> dragon44329864@gmail.com</li>
+
+           <li class="lang-content" data-lang="en"><b>Status:</b> Available</li>
+           <li class="lang-content" data-lang="de"><b>Status:</b> Verfügbar</li>
+           <li class="lang-content" data-lang="zh"><b>状态：</b> 可联系</li>
+
+           <li class="lang-content" data-lang="en"><b>Response time:</b> within 1 day</li>
+           <li class="lang-content" data-lang="de"><b>Antwortzeit:</b> innerhalb von 1 Tag</li>
+           <li class="lang-content" data-lang="zh"><b>回复时间：</b> 1天内</li>
+        </ul>
+
+        <div class="chips">
+            <a class="chip" href="https://github.com/Fatelexe">GitHub</a>
+          <a class="chip" href="https://discord.com/users/826025385686859796">Discord</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="lang-content" data-lang="en">Send a Message</h2>
+        <h2 class="lang-content" data-lang="de">Nachricht senden</h2>
+        <h2 class="lang-content" data-lang="zh">发送消息</h2>
+
+        <form action="{{ url_for('contact') }}"id="contactForm"
+            name="sentMessage" method="post">
+          <div class="form-floating">
+               <label class="lang-content" data-lang="en" for="name">Name:</label>
+               <label class="lang-content" data-lang="de" for="name">Name:</label>
+               <label class="lang-content" data-lang="zh" for="name">姓名：</label>
+          <input
+                class="form-control"
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Enter your name..."
+                data-placeholder-en="Enter your email..."
+                data-placeholder-de="Geben Sie hier Ihren Namen ein..."
+                data-placeholder-zh="在此输入您的名字..."
+                required
+              />
+            </div>
+            <div class="form-floating">
+                <label class="lang-content" data-lang="en" for="email">Email address:</label>
+                <label class="lang-content" data-lang="de" for="email">E-Mail-Adresse:</label>
+                <label class="lang-content" data-lang="zh" for="email">邮箱地址：</label>
+                    <input
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Enter your email..."
+                    data-placeholder-en="Enter your email..."
+                    data-placeholder-de="Geben Sie hier Ihren Email ein..."
+                    data-placeholder-zh="在此输入您的邮箱..."
+                    required
+                    />
+            </div>
+            <div class="form-floating">
+                <label class="lang-content" data-lang="en" for="phone">Phone Number (not required😊):</label>
+                <label class="lang-content" data-lang="de" for="phone">Telefonnummer (nicht erforderlich😊):</label>
+                <label class="lang-content" data-lang="zh" for="phone">电话号码（可不填😊）：</label>
+
+              <input
+                class="form-control"
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="Enter your phone number..."
+                data-placeholder-en="Enter your phone number here..."
+                data-placeholder-de="Geben Sie hier Ihre Telefonnummer ein..."
+                data-placeholder-zh="在此输入您的电话号码..."
+              />
+            </div>
+            <div class="form-floating">
+               <label class="lang-content" data-lang="en" for="message">Message:</label>
+               <label class="lang-content" data-lang="de" for="message">Nachricht:</label>
+               <label class="lang-content" data-lang="zh" for="message">留言：</label>
+              <textarea
+                class="form-control hide-scroll"
+                id="message"
+                name="message"
+                placeholder="Enter your message here..."
+                data-placeholder-en="Enter your message here..."
+                data-placeholder-de="Geben Sie hier Ihre Nachricht ein..."
+                data-placeholder-zh="在此输入您的留言..."
+                required
+                style="
+                  height: 6rem;
+                  max-height: 16rem;
+                  resize: none;
+                  overflow-y: auto;
+                "
+                oninput="autoResize(this)"
+              ></textarea>
+            </div>
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                <div class="alert alert-success">
+                  {{ messages[0] }}
+                </div>
+              {% endif %}
+            {% endwith %}
+            <button
+              class="btn btn primary text-uppercase"
+              id="submitButton"
+              type="submit"
+            >
+              <span class="lang-content" data-lang="en">Send</span>
+              <span class="lang-content" data-lang="de">Senden</span>
+              <span class="lang-content" data-lang="zh">发送</span>
+            </button>
+        </form>
+      </div>
+
+    </section>
+    <div class="lang-switch">
+      <button class="lang-btn btn" onclick="setLang('en')">EN</button>
+      <button class="lang-btn btn" onclick="setLang('de')">DE</button>
+      <button class="lang-btn btn" onclick="setLang('zh')">中文</button>
+    </div>
+    <footer>
+      © <span id="year"></span> Aaron S • Published on 31/12/2025
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script>
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll(".lang-content").forEach(el => {
+      el.hidden = el.dataset.lang !== lang;
+    });
+    document.querySelectorAll("[data-placeholder-en]").forEach(el => {
+      el.placeholder = el.dataset["placeholder" + document.documentElement.lang.charAt(0).toUpperCase() + document.documentElement.lang.slice(1)];
+    });
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+      btn.classList.toggle("active", btn.textContent.includes(lang.toUpperCase()) || btn.textContent === "中文" && lang === "zh");
+    });
+
+    localStorage.setItem("site-lang", lang);
+  }
+
+  // Remember language on reload
+  const savedLang = localStorage.getItem("site-lang") || "en";
+  setLang(savedLang);
+</script>
+</body>
+</html>

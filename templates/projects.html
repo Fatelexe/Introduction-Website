@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aaron — Projects</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}" />
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="nav" aria-label="Primary">
+      <div class="brand">
+        <div class="logo"></div>
+        <div>
+          <div class="lang-content" data-lang="en">Aaron S</div>
+          <div class="lang-content" data-lang="de">Aaron S</div>
+          <div class="lang-content" data-lang="zh">Aaron S</div>
+          <div class="muted small lang-content" data-lang="en">Student • Novice Developer • learning Python</div>
+          <div class="muted small lang-content" data-lang="de">Schüler • Einsteiger-Entwickler • Lernt gerade Python</div>
+          <div class="muted small lang-content" data-lang="zh">学生 • 初级开发者 • 正在学习 Python</div>
+        </div>
+      </div>
+
+      <nav class="navlinks">
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('home') }}">Home</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('home') }}">Home</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('home') }}">首页</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('about') }}">About</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('about') }}">Vorstellung</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('about') }}">介绍</a>
+        <a class="pill primary lang-content" data-lang="en" href="{{ url_for('project') }}">Projects</a>
+        <a class="pill primary lang-content" data-lang="de" href="{{ url_for('project') }}">Projekte</a>
+        <a class="pill primary lang-content" data-lang="zh" href="{{ url_for('project') }}">项目</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('skills') }}">Skills</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('skills') }}">Fähigkeiten</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('skills') }}">技能</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('contact') }}">Leave a Message for me!</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('contact') }}">Hinterlasse mir eine Nachricht!</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('contact') }}">请给我留言！</a>
+
+      </nav>
+    </header>
+
+    <section class="card" style="margin-top:24px;">
+      <h1 class="lang-content" data-lang="en">My Projects</h1>
+      <h1 class="lang-content" data-lang="de">Meine Projekte</h1>
+      <h1 class="lang-content" data-lang="zh">我的项目</h1>
+      <p class="muted lang-content" data-lang="en">
+        A collection of projects I’ve built while learning Python.
+      </p>
+      <p class="muted lang-content" data-lang="de">
+        Eine Sammlung von Projekten, die ich während meines Python-Lernprozesses erstellt habe.
+      </p>
+      <p class="muted lang-content" data-lang="zh">
+        我在学习 Python 过程中完成的一些项目合集。
+      </p>
+    </section>
+
+
+    <section class="grid" style="margin-top:16px;">
+
+
+      <div class="card">
+        <h2>🌐 Movies-fav-website</h2>
+         <p class="muted lang-content" data-lang="en">
+             My first public website. It allows users to add their favorite movies, edit ratings,
+             and automatically sort movies into a ranked list.
+         </p>
+         <p class="muted lang-content" data-lang="de">
+             Meine erste veröffentlichte Website. Nutzer können ihre Lieblingsfilme hinzufügen,
+             Bewertungen bearbeiten und die Filme automatisch nach Bewertung sortieren lassen.
+         </p>
+
+         <p class="muted lang-content" data-lang="zh">
+             我的第一个公开网站。可以添加喜欢的电影、修改评分，并根据评分自动生成排行榜。
+         </p>
+
+          <ul class="list">
+              <li class="lang-content" data-lang="en">
+                <b>What it does:</b> Add, edit, rank, rate and delete movies
+              </li>
+              <li class="lang-content" data-lang="de">
+                <b>Funktionen:</b> Filme hinzufügen, bearbeiten, bewerten, sortieren und löschen
+              </li>
+              <li class="lang-content" data-lang="zh">
+                <b>功能：</b> 添加、编辑、评分、排序和删除电影
+              </li>
+
+              <li class="lang-content" data-lang="en">
+                <b>Tech:</b> Python, Flask, HTML, CSS
+              </li>
+              <li class="lang-content" data-lang="de">
+                <b>Technik:</b> Python, Flask, HTML, CSS
+              </li>
+              <li class="lang-content" data-lang="zh">
+                <b>技术栈：</b> Python、Flask、HTML、CSS
+              </li>
+              <li class="lang-content" data-lang="en">
+                <b>What I learned:</b> Databases, Flask-WTF forms
+              </li>
+              <li class="lang-content" data-lang="de">
+                <b>Was ich gelernt habe:</b> Datenbanken, Flask-WTF-Formulare
+              </li>
+              <li class="lang-content" data-lang="zh">
+                <b>收获：</b> 数据库、Flask-WTF 表单
+              </li>
+          </ul>
+
+
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">Flask</span>
+          <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+        </div>
+
+        <div class="cta" style="margin-top:10px;">
+          <a class="btn" href="https://github.com/Fatelexe/movies-website" target="_blank">GitHub</a>
+          <a class="btn primary" href="https://movies-website-fy36.onrender.com/" target="_blank">
+              <span class="lang-content" data-lang="en">Website</span>
+              <span class="lang-content" data-lang="de">Website</span>
+              <span class="lang-content" data-lang="zh">网址</span></a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <h2 class="muted lang-content" data-lang="en">🎮 Snakes</h2>
+        <h2 class="muted lang-content" data-lang="de">🎮 Snakes</h2>
+        <h2 class="muted lang-content" data-lang="zh">🎮 贪吃蛇</h2>
+         <p class="muted lang-content" data-lang="en">
+             A classic Snake game remake using the Turtle module.
+         </p>
+         <p class="muted lang-content" data-lang="de">
+             Ein klassisches Snake-Spiel, neu umgesetzt mit dem Turtle-Modul.
+         </p>
+         <p class="muted lang-content" data-lang="zh">
+             使用 Turtle 模块重制的经典贪吃蛇游戏。
+         </p>
+
+        <ul class="list">
+            <li class="lang-content" data-lang="en">
+              <b>What it does:</b> The snake moves and grows
+            </li>
+            <li class="lang-content" data-lang="de">
+              <b>Funktionen:</b> Die Schlange bewegt sich und wächst
+            </li>
+            <li class="lang-content" data-lang="zh">
+              <b>功能：</b> 蛇可以移动并不断变长
+            </li>
+            <li class="lang-content" data-lang="en">
+              <b>Tech:</b> Python, Turtle
+            </li>
+            <li class="lang-content" data-lang="de">
+              <b>Technik:</b> Python, Turtle
+            </li>
+            <li class="lang-content" data-lang="zh">
+              <b>技术栈：</b> Python、Turtle
+            </li>
+
+           <li class="lang-content" data-lang="en">
+              <b>What I learned:</b> Turtle graphics
+            </li>
+            <li class="lang-content" data-lang="de">
+              <b>Was ich gelernt habe:</b> Turtle-Grafiken
+            </li>
+            <li class="lang-content" data-lang="zh">
+              <b>收获：</b> Turtle 图形编程
+            </li>
+        </ul>
+
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">Turtle</span>
+        </div>
+
+        <div class="cta" style="margin-top:10px;">
+          <a class="btn" href="https://github.com/Fatelexe/snakes" target="_blank">
+                <span class="lang-content" data-lang="en">Source Code</span>
+                <span class="lang-content" data-lang="de">Quelle</span>
+                <span class="lang-content" data-lang="zh">源代码</span>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="card">
+
+        <h2>
+            <svg version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" id="Calculator-Icon--Streamline-Emojitwo" height="32" width="32">
+            <desc>
+            Calculator Icon Streamline Emoji: https://streamlinehq.com
+            </desc>
+              <title>Pocket Calculator</title>
+                <path d="M5.895 1c-0.25 0 -0.5 0.25 -0.5 0.5v29c0 0.25 0.25 0.5 0.5 0.5h20.215c0.25 0 0.5 -0.25 0.5 -0.5V1.5c0 -0.25 -0.25 -0.5 -0.5 -0.5z" fill="#d0d0d0" stroke-width="0.5"></path>
+                <path d="M7.325 6.15c-0.24605 0.008215 -0.4883 0.27335 -0.4883 0.5385v6.515c0 0.26915 0.25 0.5385 0.5 0.5385h17.33c0.25 0 0.5 -0.26915 0.5 -0.5385v-6.515c0 -0.26915 -0.25 -0.5385 -0.5 -0.5385h-17.33c-0.0039 0 -0.007815 -0.000131 -0.01172 0z" fill="#4fd1d9" stroke-width="0.5"></path>
+                <path d="M7.325 15.185c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.2448 0.2397 0.48895 0.4844 0.499h1.543c0.2447 -0.010095 0.4844 -0.25425 0.4844 -0.499V15.685c0 -0.25 -0.25 -0.5 -0.5 -0.5H7.325zm3.954 0c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.25 0.25 0.5 0.5 0.5h1.5115c0.25 0 0.5 -0.25 0.5 -0.5V15.685c0 -0.25 -0.25 -0.5 -0.5 -0.5h-1.5115c-0.0039 0 -0.007815 -0.0001215 -0.01172 0zm3.954 0c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.25 0.25 0.5 0.5 0.5h1.5115c0.25 0 0.5 -0.25 0.5 -0.5V15.685c0 -0.25 -0.25 -0.5 -0.5 -0.5h-1.5115c-0.0039 0 -0.007815 -0.0001215 -0.01172 0zm3.954 0c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.25 0.25 0.5 0.5 0.5h1.5115c0.25 0 0.5 -0.25 0.5 -0.5V15.685c0 -0.25 -0.25 -0.5 -0.5 -0.5h-1.5115c-0.003906 0 -0.007815 -0.0001215 -0.01172 0zm0 3.954c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.25 0.25 0.5 0.5 0.5h1.5115c0.25 0 0.5 -0.25 0.5 -0.5v-1.5115c0 -0.25 -0.25 -0.5 -0.5 -0.5h-1.5115c-0.0039 0 -0.007815 -0.0001215 -0.01172 0zm3.954 0c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.25 0.25 0.5 0.5 0.5h1.5115c0.25 0 0.5 -0.25 0.5 -0.5v-1.5115c0 -0.25 -0.25 -0.5 -0.5 -0.5h-1.5115c-0.0039 0 -0.007815 -0.0001215 -0.01172 0zm-3.954 3.954c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.25 0.25 0.5 0.5 0.5h1.5115c0.25 0 0.5 -0.25 0.5 -0.5v-1.5115c0 -0.25 -0.25 -0.5 -0.5 -0.5h-1.5115c-0.0039 0 -0.007815 -0.0001215 -0.01172 0zm3.954 0c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.25 0.25 0.5 0.5 0.5h1.5115c0.25 0 0.5 -0.25 0.5 -0.5v-1.5115c0 -0.25 -0.25 -0.5 -0.5 -0.5h-1.5115c-0.0039 0 -0.007815 -0.0001215 -0.01172 0zm-3.954 3.954c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.25 0.25 0.5 0.5 0.5h1.5115c0.25 0 0.5 -0.25 0.5 -0.5v-1.5115c0 -0.25 -0.25 -0.5 -0.5 -0.5h-1.5115c-0.0039 0 -0.007815 -0.0001215 -0.01172 0zm3.954 0c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.25 0.25 0.5 0.5 0.5h1.5115c0.25 0 0.5 -0.25 0.5 -0.5v-1.5115c0 -0.25 -0.25 -0.5 -0.5 -0.5h-1.5115c-0.0039 0 -0.007815 -0.0001215 -0.01172 0z" fill="#898a90" stroke-width="0.5"></path>
+                <path d="M16.06 2.4425c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.2655c0 0.25 0.25 0.5 0.5 0.5h8.595c0.25 0 0.5 -0.25 0.5 -0.5V2.9425c0 -0.25 -0.25 -0.5 -0.5 -0.5h-8.605zm-8.735 16.695c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.25 0.25 0.5 0.5 0.5h1.5115c0.25 0 0.5 -0.25 0.5 -0.5v-1.5115c0 -0.25 -0.25 -0.5 -0.5 -0.5h-1.5115c-0.0039 0 -0.007815 -0.0001215 -0.01172 0zm3.954 0c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.25 0.25 0.5 0.5 0.5h1.5115c0.25 0 0.5 -0.25 0.5 -0.5v-1.5115c0 -0.25 -0.25 -0.5 -0.5 -0.5h-1.5115c-0.0039 0 -0.007815 -0.0001215 -0.01172 0zm3.954 0c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.25 0.25 0.5 0.5 0.5h1.5115c0.25 0 0.5 -0.25 0.5 -0.5v-1.5115c0 -0.25 -0.25 -0.5 -0.5 -0.5h-1.5235zm-7.91 3.954c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.25 0.25 0.5 0.5 0.5h1.5115c0.25 0 0.5 -0.25 0.5 -0.5v-1.5115c0 -0.25 -0.25 -0.5 -0.5 -0.5h-1.5115c-0.0039 0 -0.007815 -0.0001215 -0.01172 0zm3.954 0c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.25 0.25 0.5 0.5 0.5h1.5115c0.25 0 0.5 -0.25 0.5 -0.5v-1.5115c0 -0.25 -0.25 -0.5 -0.5 -0.5h-1.5115c-0.0039 0 -0.007815 -0.0001215 -0.01172 0zm3.954 0c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.25 0.25 0.5 0.5 0.5h1.5115c0.25 0 0.5 -0.25 0.5 -0.5v-1.5115c0 -0.25 -0.25 -0.5 -0.5 -0.5h-1.5115c-0.0039 0 -0.007815 -0.0001215 -0.01172 0zm-7.91 3.954c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.25 0.25 0.5 0.5 0.5h1.5115c0.25 0 0.5 -0.25 0.5 -0.5v-1.5115c0 -0.25 -0.25 -0.5 -0.5 -0.5h-1.5115c-0.0039 0 -0.007815 -0.0001215 -0.01172 0zm3.954 0c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.25 0.25 0.5 0.5 0.5h1.5115c0.25 0 0.5 -0.25 0.5 -0.5v-1.5115c0 -0.25 -0.25 -0.5 -0.5 -0.5h-1.5115c-0.0039 0 -0.007815 -0.0001215 -0.01172 0zm3.954 0c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.25 0.25 0.5 0.5 0.5h1.5115c0.25 0 0.5 -0.25 0.5 -0.5v-1.5115c0 -0.25 -0.25 -0.5 -0.5 -0.5h-1.5115c-0.0039 0 -0.007815 -0.0001215 -0.01172 0z" fill="#3e4347" stroke-width="0.5"></path>
+                <path d="M23.14 15.185c-0.24605 0.00763 -0.4883 0.2539 -0.4883 0.5v1.5115c0 0.25 0.25 0.5 0.5 0.5h1.5115c0.25 0 0.5 -0.25 0.5 -0.5V15.685c0 -0.25 -0.25 -0.5 -0.5 -0.5h-1.5235z" fill="#ed4c5c" stroke-width="0.5"></path>
+           </svg> <span class="muted lang-content" data-lang="en">Resource_calculator_v2</span><span class="muted lang-content" data-lang="ede">Resource_calculator_v2</span><span class="muted lang-content" data-lang="zh">资源管理器v2</span>
+        </h2>
+        <p class="muted lang-content" data-lang="en">
+           My first solo project, an app that can store and calculate resources.
+        </p>
+        <p class="muted lang-content" data-lang="de">
+           Mein erstes Solo-Projekt, eine App, die Ressourcen speichern und berechnen kann.
+        </p>
+        <p class="muted lang-content" data-lang="zh">
+           我的第一个独立项目，一个可以存储并计算资源的应用。
+        </p>
+
+        <ul class="list">
+            <li class="lang-content" data-lang="en">
+              <b>What it does:</b> Store and Calculate
+            </li>
+            <li class="lang-content" data-lang="de">
+              <b>Was es tut:</b> Speichern und Berechnen
+            </li>
+            <li class="lang-content" data-lang="zh">
+              <b>功能：</b> 存储和计算
+            </li>
+
+            <li class="lang-content" data-lang="en">
+              <b>Tech:</b> Python, Tkinter
+            </li>
+            <li class="lang-content" data-lang="de">
+              <b>Technik:</b> Python, Tkinter
+            </li>
+            <li class="lang-content" data-lang="zh">
+              <b>技术栈：</b> Python、Tkinter
+            </li>
+
+            <li class="lang-content" data-lang="en">
+              <b>What I learned:</b> APIs, data handling
+            </li>
+            <li class="lang-content" data-lang="de">
+              <b>Was ich gelernt habe:</b> APIs, Datenverarbeitung
+            </li>
+            <li class="lang-content" data-lang="zh">
+              <b>收获：</b> API、数据处理
+            </li>
+        </ul>
+
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">Tkinter</span>
+        </div>
+
+        <div class="cta" style="margin-top:10px;">
+          <a class="btn" href="https://github.com/Fatelexe" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+          <h2>
+              <span class="lang-content" data-lang="en">🌐 Self Introduction Website! (this one!)</span>
+              <span class="lang-content" data-lang="de">🌐 Selbstvorstellungs-Website! (diese hier!)</span>
+              <span class="lang-content" data-lang="zh">🌐 个人介绍网站!（就是这个）</span>
+          </h2>
+        <p class="muted lang-content" data-lang="en">
+            My first real html project, worked around half a week on it.
+          </p>
+          <p class="muted lang-content" data-lang="de">
+            Mein erstes richtiges HTML-Projekt, ich habe ungefähr halbe Woche daran gearbeitet.
+          </p>
+          <p class="muted lang-content" data-lang="zh">
+            我的第一个正式 HTML 项目，大约花了半周时间完成。
+          </p>
+
+
+        <ul class="list">
+          <li class="lang-content" data-lang="en">
+            <b>What it does:</b> About me!
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>Was es tut:</b> Über mich!
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>功能：</b> 关于我！
+          </li>
+
+          <li class="lang-content" data-lang="en">
+            <b>Tech:</b> Python, Flask, HTML, CSS
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>Technik:</b> Python, Flask, HTML, CSS
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>技术栈：</b> Python、Flask、HTML、CSS
+          </li>
+
+          <li class="lang-content" data-lang="en">
+            <b>What I learned:</b> Advanced CSS styles
+          </li>
+          <li class="lang-content" data-lang="de">
+            <b>Was ich gelernt habe:</b> Erweiterte CSS-Stile
+          </li>
+          <li class="lang-content" data-lang="zh">
+            <b>收获：</b> 高级 CSS 样式
+          </li>
+        </ul>
+
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">Flask</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+        </div>
+
+        <div class="cta" style="margin-top:10px;">
+          <a class="btn" href="https://github.com/Fatelexe" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="card">
+        <h2 class="lang-content" data-lang="en">More coming soon!</h2>
+        <h2 class="lang-content" data-lang="de">Weitere Projekte folgen bald!</h2>
+        <h2 class="lang-content" data-lang="zh">更多项目即将上线！</h2>
+      </div>
+
+    </section>
+    <div class="lang-switch">
+      <button class="lang-btn btn" onclick="setLang('en')">EN</button>
+      <button class="lang-btn btn" onclick="setLang('de')">DE</button>
+      <button class="lang-btn btn" onclick="setLang('zh')">中文</button>
+    </div>
+    <footer>
+      © <span id="year"></span> Aaron S • Published on 31/12/2025
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script>
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll(".lang-content").forEach(el => {
+      el.hidden = el.dataset.lang !== lang;
+    });
+    document.querySelectorAll("[data-placeholder-en]").forEach(el => {
+      el.placeholder = el.dataset["placeholder" + document.documentElement.lang.charAt(0).toUpperCase() + document.documentElement.lang.slice(1)];
+    });
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+      btn.classList.toggle("active", btn.textContent.includes(lang.toUpperCase()) || btn.textContent === "中文" && lang === "zh");
+    });
+
+    localStorage.setItem("site-lang", lang);
+  }
+
+  // Remember language on reload
+  const savedLang = localStorage.getItem("site-lang") || "en";
+  setLang(savedLang);
+</script>
+</body>
+</html>
+

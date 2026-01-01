@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aaron — Thank You</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body class="page">
+  <main class="main-center">
+    <div class="card text-center">
+      <h1>Thank You</h1>
+      <p class="muted">Enter your name below</p>
+
+      <form id="nameForm">
+        <input
+          class="form-control text-center mb-3"
+          type="text"
+          id="nameInput"
+          placeholder="Enter your name..."
+          required
+        />
+
+        <button type="submit" class="btn primary w-100">
+          Submit
+        </button>
+          <a href="{{url_for('home') }}"><span style="color: pink">Back Home!</span></a>
+      </form>
+
+      <div id="successMsg" class="muted" style="display:none; margin-top:12px;">
+        Name recorded ✔
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Recorded Names</h2>
+      <ul id="nameList" class="list"></ul>
+       <button class="btn" type="button" onclick="clearNamesWithPassword()">
+          Clear All Names
+       </button>
+    </div>
+  </main>
+
+  <script>
+    const form = document.getElementById("nameForm");
+    const input = document.getElementById("nameInput");
+    const list = document.getElementById("nameList");
+    const success = document.getElementById("successMsg");
+
+    function loadNames() {
+      const names = JSON.parse(localStorage.getItem("names") || "[]");
+      list.innerHTML = "";
+      names.forEach(name => {
+        const li = document.createElement("li");
+        li.textContent = name;
+        list.appendChild(li);
+      });
+    }
+
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+
+      const name = input.value.trim();
+      if (!name) return;
+
+      const names = JSON.parse(localStorage.getItem("names") || "[]");
+      names.push(name);
+      localStorage.setItem("names", JSON.stringify(names));
+
+      input.value = "";
+      success.style.display = "block";
+      setTimeout(() => success.style.display = "none", 1500);
+
+      loadNames();
+    });
+
+    loadNames();
+  </script>
+<script>
+  // Change this to whatever password you want
+  const CLEAR_PASSWORD = "Aaron12345";
+
+  function clearNamesWithPassword() {
+    const pw = prompt("Enter password to clear all names:");
+    if (pw === null) return; // user cancelled
+
+    if (pw !== CLEAR_PASSWORD) {
+      alert("Wrong password.");
+      return;
+    }
+
+    if (!confirm("Delete ALL recorded names?")) return;
+
+    localStorage.removeItem("names");
+    loadNames();
+    alert("All names cleared.");
+  }
+</script>
+</body>
+</html>

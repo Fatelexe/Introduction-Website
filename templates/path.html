@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aaron — My Path</title>
+
+  <!-- Reuse the SAME stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+
+  <!-- Icons (Lucide) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- NAV -->
+    <header class="nav" aria-label="Primary">
+      <div class="brand">
+        <div class="logo"></div>
+        <div>
+          <div class="lang-content" data-lang="en">Aaron S</div>
+          <div class="lang-content" data-lang="de">Aaron S</div>
+          <div class="lang-content" data-lang="zh">Aaron S</div>
+          <div class="muted small lang-content" data-lang="en">Student • Novice Developer • learning Python</div>
+          <div class="muted small lang-content" data-lang="de">Schüler • Einsteiger-Entwickler • Lernt gerade Python</div>
+          <div class="muted small lang-content" data-lang="zh">学生 • 初级开发者 • 正在学习 Python</div>
+        </div>
+      </div>
+
+      <nav class="navlinks">
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('home') }}">Home</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('home') }}">Home</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('home') }}">首页</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('about') }}">About</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('about') }}">Vorstellung</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('about') }}">介绍</a>
+        <a class="pill primary lang-content" data-lang="en" href="{{ url_for('path') }}">My Path</a>
+        <a class="pill primary lang-content" data-lang="de" href="{{ url_for('path') }}">Mein Weg</a>
+        <a class="pill primary lang-content" data-lang="zh" href="{{ url_for('path') }}">我自己的路</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('project') }}">Projects</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('project') }}">Projekte</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('project') }}">项目</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('skills') }}">Skills</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('skills') }}">Fähigkeiten</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('skills') }}">技能</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('contact') }}">Leave a Message for me!</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('contact') }}">Hinterlasse mir eine Nachricht!</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('contact') }}">请给我留言！</a>
+
+      </nav>
+    </header>
+
+
+
+    <section class="card" style="margin-top:24px;">
+      <h1 class="lang-content" data-lang="en">My Path - Life</h1>
+      <h1 class="lang-content" data-lang="de">Mein Weg – Leben</h1>
+      <h1 class="lang-content" data-lang="zh">我的人生之路</h1>
+      <p class="lang-content" data-lang="en">
+        A journey with countless possibilities.
+      </p>
+      <p class="lang-content" data-lang="de">
+        Eine Reise mit unzähligen Möglichkeiten.
+      </p>
+      <p class="lang-content" data-lang="zh">
+        一段充满无限可能的旅程。
+      </p>
+    </section>
+
+
+    <section class="grid path-stack" style="margin-top:16px;">
+
+
+      <div class="card">
+        <h2><i data-lucide="play-circle"></i> 11,2,2010</h2>
+        <p class="lang-content" data-lang="en">The journey started in China</p>
+        <p class="lang-content" data-lang="de">Die Reise begann in China</p>
+        <p class="lang-content" data-lang="zh">旅程从中国开始</p>
+      </div>
+
+      <div class="card">
+        <h2><i data-lucide="sprout"></i> 2010-2018</h2>
+        <p class="lang-content" data-lang="en">
+          Childhood filled with happy memories.
+        </p>
+        <p class="lang-content" data-lang="de">
+          Eine Kindheit voller glücklicher Erinnerungen.
+        </p>
+        <p class="lang-content" data-lang="zh">
+          充满快乐回忆的童年。
+        </p>
+        <ul class="list">
+          <li class="lang-content" data-lang="en">kindergarden-&gt; 4th grade</li>
+          <li class="lang-content" data-lang="de">Kindergarten -&gt; 4. Klasse</li>
+          <li class="lang-content" data-lang="zh">幼儿园 → 四年级</li>
+        </ul>
+      </div>
+
+
+      <div class="card">
+        <h2><i data-lucide="git-branch"></i> 2019</h2>
+        <p class="lang-content" data-lang="en">The first Turning point...</p>
+        <p class="lang-content" data-lang="de">Der erste Wendepunkt…</p>
+        <p class="lang-content" data-lang="zh">第一个转折点……</p>
+          <ul>
+             <li class="lang-content" data-lang="en">moved to Germany</li>
+             <li class="lang-content" data-lang="de">Umzug nach Deutschland</li>
+             <li class="lang-content" data-lang="zh">搬到德国</li>
+             <li class="lang-content" data-lang="en">had to start all over again</li>
+             <li class="lang-content" data-lang="de">musste ganz von vorne anfangen</li>
+             <li class="lang-content" data-lang="zh">不得不重新开始</li>
+             <li class="lang-content" data-lang="en">New</li>
+             <li class="lang-content" data-lang="de">Neu</li>
+             <li class="lang-content" data-lang="zh">全新开始</li>
+          </ul>
+      </div>
+
+
+      <div class="card">
+        <h2><i data-lucide="school"></i> 2019-2021</h2>
+          <p>
+              Grundschule an der Friedenstraße
+          </p>
+        <ul class="list">
+          <li class="lang-content" data-lang="en">Continued Elementry School</li>
+          <li class="lang-content" data-lang="de">Grundschule fortgesetzt</li>
+          <li class="lang-content" data-lang="zh">继续小学学习</li>
+
+          <li class="lang-content" data-lang="en">Started to fit into the new environment</li>
+          <li class="lang-content" data-lang="de">Begann, mich an die neue Umgebung anzupassen</li>
+          <li class="lang-content" data-lang="zh">开始适应新的环境</li>
+
+          <li class="lang-content" data-lang="en">Made lasting friendships</li>
+          <li class="lang-content" data-lang="de">Schloss dauerhafte Freundschaften</li>
+          <li class="lang-content" data-lang="zh">结交了长久的朋友</li>
+        </ul>
+      </div>
+
+
+      <div class="card">
+        <h2><i data-lucide="book-open"></i>2021-2025</h2>
+          <p>
+              Gymnasium Ottobrunn
+          </p>
+        <ul class="list">
+          <li class="lang-content" data-lang="en">
+            Fluent in German and some French in school
+          </li>
+          <li class="lang-content" data-lang="de">
+            Fließend Deutsch und etwas Französisch in der Schule
+          </li>
+          <li class="lang-content" data-lang="zh">
+            流利的德语，并在学校学习了一些法语
+          </li>
+          <li class="lang-content" data-lang="en">Continued to meet new friends</li>
+          <li class="lang-content" data-lang="de">Lernte weiterhin neue Freunde kennen</li>
+          <li class="lang-content" data-lang="zh">不断结识新朋友</li>
+          <li class="lang-content" data-lang="en">
+            Traveled to multiple Countries in Europe
+          </li>
+          <li class="lang-content" data-lang="de">
+            Reiste in mehrere Länder Europas
+          </li>
+          <li class="lang-content" data-lang="zh">
+             去过欧洲多个国家旅行
+          </li>
+            <li class="lang-content" data-lang="en">
+              Visited two of the three most famous museums in the world: the Vatican Museums and the Louvre in Paris, France.
+            </li>
+            <li class="lang-content" data-lang="de">
+              Besuchte zwei der drei berühmtesten Museen der Welt: die Vatikanischen Museen und den Louvre in Paris.
+            </li>
+            <li class="lang-content" data-lang="zh">
+              参观了世界三大著名博物馆中的两个：梵蒂冈博物馆和法国巴黎的卢浮宫。
+            </li>
+            <li class="lang-content" data-lang="en">
+              bought my <span style="color: pink">FIRST GAMING LAPTOP</span> in Dresden, Germany! 🎉🎉🎉
+            </li>
+            <li class="lang-content" data-lang="de">
+              kaufte meinen <span style="color: pink">ERSTEN GAMING-LAPTOP</span> in Dresden, Deutschland! 🎉🎉🎉
+            </li>
+            <li class="lang-content" data-lang="zh">
+              在德国德累斯顿买了我的<span style="color: pink">第一台游戏笔记本电脑</span>！🎉🎉🎉
+            </li>
+        </ul>
+      </div>
+       <div class="card">
+        <h2><i data-lucide="git-branch"></i>2025</h2>
+          <p class="lang-content" data-lang="en">The Second Turning Point...</p>
+          <p class="lang-content" data-lang="de">Der zweite Wendepunkt…</p>
+          <p class="lang-content" data-lang="zh">第二个转折点……</p>
+        <ul class="list">
+          <li class="lang-content" data-lang="en">Moved to USA</li>
+          <li class="lang-content" data-lang="de">Umzug in die USA</li>
+          <li class="lang-content" data-lang="zh">搬到美国</li>
+
+          <li class="lang-content" data-lang="en">Had to Start all over again</li>
+          <li class="lang-content" data-lang="de">Musste wieder von vorne anfangen</li>
+          <li class="lang-content" data-lang="zh">再次从头开始</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2><i data-lucide="book-open"></i>2025 —
+            <span class="lang-content" data-lang="en">Present</span>
+            <span class="lang-content" data-lang="de">Jetzt</span>
+            <span class="lang-content" data-lang="zh">至今</span>
+        </h2>
+          <p>
+              Robinson Middle-> Jasper High
+          </p>
+         <ul class="list">
+           <li class="lang-content" data-lang="en">Meet new friends</li>
+           <li class="lang-content" data-lang="de">Lernte neue Freunde kennen</li>
+           <li class="lang-content" data-lang="zh">结识新朋友</li>
+
+           <li class="lang-content" data-lang="en">
+             Continued to stay on track on education
+           </li>
+           <li class="lang-content" data-lang="de">
+             Setzte die schulische Laufbahn konsequent fort
+           </li>
+           <li class="lang-content" data-lang="zh">
+             持续专注于学业
+           </li>
+
+           <li class="lang-content" data-lang="en">Learned Python</li>
+           <li class="lang-content" data-lang="de">Lernte Python</li>
+           <li class="lang-content" data-lang="zh">学习了 Python</li>
+
+           <li class="lang-content" data-lang="en">
+             Build my <a style="color: pink" href="https://pcpartpicker.com/b/frY9TW">FIRST CUSTOM GAMING PC</a>. 🎉🎉🎉
+           </li>
+           <li class="lang-content" data-lang="de">
+             Baute meinen <a style="color: pink" href="https://pcpartpicker.com/b/frY9TW">ERSTEN EIGENEN GAMING-PC</a>. 🎉🎉🎉
+           </li>
+           <li class="lang-content" data-lang="zh">
+             组装了我的<a style="color: pink" href="https://pcpartpicker.com/b/frY9TW">第一台定制游戏电脑</a>。🎉🎉🎉
+           </li>
+         </ul>
+      </div>
+
+
+      <div class="card">
+        <h2><i data-lucide="telescope"></i>
+            <span class="lang-content" data-lang="en">Future</span>
+            <span class="lang-content" data-lang="de">Zukunft</span>
+            <span class="lang-content" data-lang="zh">未来</span></h2>
+        <p class="lang-content" data-lang="en">
+          My path is still unfolding. Who knows what happens next? 🙂
+        </p>
+        <p class="lang-content" data-lang="de">
+          Mein Weg entfaltet sich noch. Wer weiß, was als Nächstes kommt? 🙂
+        </p>
+        <p class="lang-content" data-lang="zh">
+          我的道路仍在展开。谁知道接下来会发生什么呢？🙂
+        </p>
+      </div>
+
+    </section>
+    <div class="lang-switch">
+      <button class="lang-btn btn" onclick="setLang('en')">EN</button>
+      <button class="lang-btn btn" onclick="setLang('de')">DE</button>
+      <button class="lang-btn btn" onclick="setLang('zh')">中文</button>
+    </div>
+    <footer>
+      © <span id="year"></span> Aaron S • Published on 31/12/2025
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    lucide.createIcons();
+  </script>
+  <script>
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll(".lang-content").forEach(el => {
+      el.hidden = el.dataset.lang !== lang;
+    });
+    document.querySelectorAll("[data-placeholder-en]").forEach(el => {
+      el.placeholder = el.dataset["placeholder" + document.documentElement.lang.charAt(0).toUpperCase() + document.documentElement.lang.slice(1)];
+    });
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+      btn.classList.toggle("active", btn.textContent.includes(lang.toUpperCase()) || btn.textContent === "中文" && lang === "zh");
+    });
+
+    localStorage.setItem("site-lang", lang);
+  }
+
+  // Remember language on reload
+  const savedLang = localStorage.getItem("site-lang") || "en";
+  setLang(savedLang);
+</script>
+</body>
+</html>
+

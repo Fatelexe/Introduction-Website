@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aaron — About Me</title>
+
+
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}" />
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="nav" aria-label="Primary">
+      <div class="brand">
+        <div class="logo"></div>
+        <div>
+          <div class="lang-content" data-lang="en">Aaron S</div>
+          <div class="lang-content" data-lang="de">Aaron S</div>
+          <div class="lang-content" data-lang="zh">Aaron S</div>
+          <div class="muted small lang-content" data-lang="en">Student • Novice Developer • learning Python</div>
+          <div class="muted small lang-content" data-lang="de">Schüler • Einsteiger-Entwickler • Lernt gerade Python</div>
+          <div class="muted small lang-content" data-lang="zh">学生 • 初级开发者 • 正在学习 Python</div>
+        </div>
+      </div>
+
+      <nav class="navlinks">
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('home') }}">Home</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('home') }}">Home</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('home') }}">首页</a>
+        <a class="pill primary lang-content" data-lang="en" href="{{ url_for('about') }}">About</a>
+        <a class="pill primary lang-content" data-lang="de" href="{{ url_for('about') }}">Vorstellung</a>
+        <a class="pill primary lang-content" data-lang="zh" href="{{ url_for('about') }}">介绍</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('project') }}">Projects</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('project') }}">Projekte</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('project') }}">项目</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('skills') }}">Skills</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('skills') }}">Fähigkeiten</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('skills') }}">技能</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('contact') }}">Leave a Message for me!</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('contact') }}">Hinterlasse mir eine Nachricht!</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('contact') }}">请给我留言！</a>
+
+      </nav>
+    </header>
+
+    <section class="card" style="margin-top:24px;">
+      <h1 class="lang-content" data-lang="en">About Me</h1>
+      <h1 class="lang-content" data-lang="de">Über mich</h1>
+      <h1 class="lang-content" data-lang="zh">关于我</h1>
+      <p class="muted lang-content" data-lang="en">
+        Learn more about who I am, what I enjoy, and what I’m working toward.
+      </p>
+      <p class="muted lang-content" data-lang="de">
+        Erfahre mehr darüber, wer ich bin, was mir Spaß macht und worauf ich hinarbeite.
+      </p>
+      <p class="muted lang-content" data-lang="zh">
+        了解更多关于我是谁、我的兴趣以及我正在努力的方向。
+      </p>
+        <a class="btn primary muted lang-content" data-lang="en" href="{{ url_for('verify') }}" >My Path - Password required</a>
+        <a class="btn primary muted lang-content" data-lang="de" href="{{ url_for('verify') }}" >Mein Weg - Password benötigt</a>
+        <a class="btn primary muted lang-content" data-lang="zh" href="{{ url_for('verify') }}" >我的人生- 需要密码</a>
+    </section>
+
+
+    <section class="grid" style="margin-top:16px;">
+
+      <div class="card">
+
+        <h2 class="lang-content" data-lang="en">🧑‍💻 Who I Am</h2>
+        <p class="lang-content" data-lang="en">
+          Hi, I’m Aaron. I'm a student who is really interested in coding and AI.
+        </p>
+        <p class="muted lang-content" data-lang="en">
+          I would rather do stuff myself than watch others do it. — Aaron S
+        </p>
+
+        <h2 class="lang-content" data-lang="de" hidden>🧑‍💻 Wer ich bin</h2>
+        <p class="lang-content" data-lang="de" hidden>
+          Hi, ich bin Aaron. Ich bin ein Schüler mit vielen Interessen an Programmierung und KI.
+        </p>
+        <p class="muted lang-content" data-lang="de" hidden>
+          Ich mache Dinge lieber selbst, als anderen dabei zuzusehen. — Aaron S
+        </p>
+
+        <h2 class="lang-content" data-lang="zh" hidden>🧑‍💻 关于我</h2>
+        <p class="lang-content" data-lang="zh" hidden>
+          你好，我是Aaron。我是一名对编程和人工智能非常感兴趣的学生。
+        </p>
+        <p class="muted lang-content" data-lang="zh" hidden>
+          我更喜欢亲自动手，而不是只看别人做。—— Aaron S
+        </p>
+      </div>
+
+
+      <div class="card">
+
+        <h2 class="lang-content" data-lang="en">💻 What I Do</h2>
+        <ul class="list lang-content" data-lang="en">
+          <li>Build small web applications and personal websites</li>
+          <li>Create simple games</li>
+          <li>Create programs to make life easier!</li>
+        </ul>
+
+        <h2 class="lang-content" data-lang="de" hidden>💻 Was ich mache</h2>
+        <ul class="list lang-content" data-lang="de" hidden>
+          <li>Ich entwickle kleine Webanwendungen und persönliche Webseiten</li>
+          <li>Ich erstelle einfache Spiele</li>
+          <li>Ich programmiere Tools, um den Alltag zu erleichtern!</li>
+        </ul>
+        <h2 class="lang-content" data-lang="zh" hidden>💻 我做什么</h2>
+        <ul class="list lang-content" data-lang="zh" hidden>
+          <li>开发小型应用和个人网站</li>
+          <li>制作简单的小游戏</li>
+          <li>编写能让生活更方便的程序！</li>
+        </ul>
+      </div>
+
+      <div class="card">
+
+        <h2 class="lang-content" data-lang="en">🎯 My Goals</h2>
+        <ul class="list lang-content" data-lang="en">
+          <li>Become a strong software developer</li>
+          <li>Build meaningful projects that help others</li>
+          <li>Learn more about AI</li>
+        </ul>
+
+        <h2 class="lang-content" data-lang="de" hidden>🎯 Meine Ziele</h2>
+        <ul class="list lang-content" data-lang="de" hidden>
+          <li>Ein kompetenter Softwareentwickler werden</li>
+          <li>Sinnvolle Projekte entwickeln, die anderen helfen</li>
+          <li>Mehr über Künstliche Intelligenz lernen</li>
+        </ul>
+
+        <h2 class="lang-content" data-lang="zh" hidden>🎯 我的目标</h2>
+        <ul class="list lang-content" data-lang="zh" hidden>
+          <li>成为一名优秀的软件开发者</li>
+         <li>开发有意义、能帮助他人的项目</li>
+          <li>深入学习人工智能</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 class="lang-content" data-lang="en">🚀 My Coding Journey</h2>
+        <ul class="list lang-content" data-lang="en">
+          <li>Started coding with Scratch when I was 10.</li>
+          <li>Recreated games like Battle Tanks, PUBG (2D), and more.</li>
+          <li>In mid-2025, I started learning with “100 Days of Code™: The Complete Python Pro Bootcamp”.</li>
+          <li>To be continued...</li>
+        </ul>
+        <p class="muted lang-content" data-lang="en">
+          I believe consistency and curiosity are the keys to growth.
+        </p>
+
+        <h2 class="lang-content" data-lang="de" hidden>🚀 Meine Coding-Reise</h2>
+        <ul class="list lang-content" data-lang="de" hidden>
+          <li>Ich habe mit 10 mit Scratch angefangen.</li>
+          <li>Ich habe Spiele wie Battle Tanks und PUBG (2D) nachgebaut und vieles mehr.</li>
+          <li>Mitte 2025 habe ich mit „100 Days of Code™: The Complete Python Pro Bootcamp“ angefangen.</li>
+          <li>Wird fortgesetzt...</li>
+        </ul>
+        <p class="muted lang-content" data-lang="de" hidden>
+          Ich glaube, dass Beständigkeit und Neugier die Schlüssel zum Wachstum sind.
+        </p>
+
+        <h2 class="lang-content" data-lang="zh" hidden>🚀 我的编程之旅</h2>
+        <ul class="list lang-content" data-lang="zh" hidden>
+          <li>10 岁时我用 Scratch 开始学习编程。</li>
+          <li>我复刻过 Battle Tanks、PUBG（2D）等游戏，还有很多其他作品。</li>
+          <li>在 2025 年年中，我开始学习《100 Days of Code™: The Complete Python Pro Bootcamp》。</li>
+          <li>未完待续……</li>
+        </ul>
+        <p class="muted lang-content" data-lang="zh" hidden>
+          我相信，坚持和好奇心是成长的关键。
+        </p>
+
+      </div>
+
+
+      <div class="card">
+        <h2>❤️ <span class="lang-content" data-lang="en">Interests</span>
+            <span class="lang-content" data-lang="de">Interessen</span>
+            <span class="lang-content" data-lang="zh">兴趣</span></h2>
+        <div class="chips">
+          <span class="chip">
+              <span class="lang-content" data-lang="en">Coding</span>
+              <span class="lang-content" data-lang="de">Programmieren</span>
+              <span class="lang-content" data-lang="zh">编程</span></span>
+          <span class="chip">
+              <span class="lang-content" data-lang="en">3D Modeling (Blender)</span>
+              <span class="lang-content" data-lang="de">3D-Modellierung (Blender)</span>
+              <span class="lang-content" data-lang="zh">3D 建模（Blender）</span></span>
+          <span class="chip">
+              <span class="lang-content" data-lang="en">AI</span>
+              <span class="lang-content" data-lang="de">KI</span>
+              <span class="lang-content" data-lang="zh">人工智能</span></span>
+          <span class="chip">
+              <span class="lang-content" data-lang="en">Animations</span>
+              <span class="lang-content" data-lang="de">Animationen</span>
+              <span class="lang-content" data-lang="zh">动画</span></span>
+          <span class="chip">
+              <span class="lang-content" data-lang="en">Game Design</span>
+              <span class="lang-content" data-lang="de">Game Design</span>
+              <span class="lang-content" data-lang="zh">游戏设计</span></span>
+          <span class="chip">
+              <span class="lang-content" data-lang="en">Web Development</span>
+              <span class="lang-content" data-lang="de">Webentwicklung</span>
+              <span class="lang-content" data-lang="zh">Web 开发</span></span>
+          <span class="chip">
+              <span class="lang-content" data-lang="en">Video Games</span>
+              <span class="lang-content" data-lang="de">Videospiele</span>
+              <span class="lang-content" data-lang="zh">电子游戏</span></span>
+        </div>
+      </div>
+      <div class="card">
+          <h2 class="lang-content" data-lang="en">🎉 Fun Fact</h2>
+          <p class="lang-content" data-lang="en">
+            I speak Chinese, German, English, and some French! 😄
+          </p>
+
+          <h2 class="lang-content" data-lang="de" hidden>🎉 Fun Fact</h2>
+          <p class="lang-content" data-lang="de" hidden>
+            Ich spreche Chinesisch, Deutsch, Englisch und ein wenig Französisch! 😄
+          </p>
+
+          <h2 class="lang-content" data-lang="zh" hidden>🎉 小知识</h2>
+          <p class="lang-content" data-lang="zh" hidden>
+            我会说中文、德语、英语，还会一点法语！😄
+          </p>
+
+      </div>
+
+    </section>
+
+    <div class="lang-switch">
+      <button class="lang-btn btn" onclick="setLang('en')">EN</button>
+      <button class="lang-btn btn" onclick="setLang('de')">DE</button>
+      <button class="lang-btn btn" onclick="setLang('zh')">中文</button>
+    </div>
+    <footer>
+      © <span id="year"></span> Aaron S • Published on 31/12/2025
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script>
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll(".lang-content").forEach(el => {
+      el.hidden = el.dataset.lang !== lang;
+    });
+    document.querySelectorAll("[data-placeholder-en]").forEach(el => {
+      el.placeholder = el.dataset["placeholder" + document.documentElement.lang.charAt(0).toUpperCase() + document.documentElement.lang.slice(1)];
+    });
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+      btn.classList.toggle("active", btn.textContent.includes(lang.toUpperCase()) || btn.textContent === "中文" && lang === "zh");
+    });
+
+    localStorage.setItem("site-lang", lang);
+  }
+
+  // Remember language on reload
+  const savedLang = localStorage.getItem("site-lang") || "en";
+  setLang(savedLang);
+</script>
+</body>
+</html>

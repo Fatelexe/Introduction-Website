@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title class="lang-content" data-lang="en">Aaron — Home</title>
+  <meta name="description" content="Personal introduction homepage for Aaron." />
+
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }} "/>
+</head>
+
+<body>
+  <div class="container">
+    <header class="nav" aria-label="Primary">
+      <div class="brand">
+        <div class="logo"></div>
+        <div>
+          <div class="lang-content" data-lang="en">Aaron S</div>
+          <div class="lang-content" data-lang="de">Aaron S</div>
+          <div class="lang-content" data-lang="zh">Aaron S</div>
+          <div class="muted small lang-content" data-lang="en">Student • Novice Developer • learning Python</div>
+          <div class="muted small lang-content" data-lang="de">Schüler • Einsteiger-Entwickler • Lernt gerade Python</div>
+          <div class="muted small lang-content" data-lang="zh">学生 • 初级开发者 • 正在学习 Python</div>
+        </div>
+      </div>
+
+      <nav class="navlinks">
+        <a class="pill primary lang-content" data-lang="en" href="{{ url_for('home') }}">Home</a>
+        <a class="pill primary lang-content" data-lang="de" href="{{ url_for('home') }}">Home</a>
+        <a class="pill primary lang-content" data-lang="zh" href="{{ url_for('home') }}">首页</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('about') }}">About</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('about') }}">Vorstellung</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('about') }}">介绍</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('project') }}">Projects</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('project') }}">Projekte</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('project') }}">项目</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('skills') }}">Skills</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('skills') }}">Fähigkeiten</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('skills') }}">技能</a>
+        <a class="pill lang-content" data-lang="en" href="{{ url_for('contact') }}">Leave a Message for me!</a>
+        <a class="pill lang-content" data-lang="de" href="{{ url_for('contact') }}">Hinterlasse mir eine Nachricht!</a>
+        <a class="pill lang-content" data-lang="zh" href="{{ url_for('contact') }}">请给我留言！</a>
+
+      </nav>
+    </header>
+
+    <section class="hero" id="about">
+      <div class="card">
+<!--          eng-->
+        <div class="lang-content" data-lang="en">
+          <p class="badge">👋 Hello!</p>
+          <h1>I'm <span class="highlight">Aaron S</span>!</h1>
+          <h2>Welcome to my self introduction website!</h2>
+        </div>
+
+<!--         German -->
+        <div class="lang-content" data-lang="de" hidden>
+          <p class="badge">👋 Hallo!</p>
+          <h1>Ich bin <span class="highlight">Aaron S</span>!</h1>
+          <h2>Willkommen auf meiner Vorstellungsseite!</h2>
+        </div>
+
+        <!-- Chinese -->
+        <div class="lang-content" data-lang="zh" hidden>
+          <p class="badge">👋 你好！</p>
+          <h1>我是 <span class="highlight">Aaron S</span>！</h1>
+          <h2>欢迎来到我的个人介绍网站！</h2>
+        </div>
+
+        <p class="subtitle lang-content" data-lang="en">
+          I'm a student interested in coding, AI and game design!<br>
+          Also I play A LOT of video games!
+        </p>
+
+        <p class="subtitle lang-content" data-lang="de" hidden>
+          Ich bin ein Schüler mit Interesse an Programmierung, KI und Game Design!<br>
+          Außerdem spiele ich sehr SEHR viele Videospiele!
+        </p>
+
+        <p class="subtitle lang-content" data-lang="zh" hidden>
+          我是一名对编程、人工智能和游戏设计感兴趣的学生！<br>
+          同时我也非常非常喜欢玩电子游戏！
+        </p>
+
+        <div class="badges">
+          <span class="badge">📍 US</span>
+
+          <span class="badge lang-content" data-lang="en">🎯 Novice Developer</span>
+          <span class="badge lang-content" data-lang="de" hidden>🎯 Anfänger-Entwickler</span>
+          <span class="badge lang-content" data-lang="zh" hidden>🎯 初级开发者</span>
+
+          <span class="badge lang-content" data-lang="en">🧠 Coding • AI • Design</span>
+          <span class="badge lang-content" data-lang="de" hidden>🧠 Programmierung • KI • Design</span>
+          <span class="badge lang-content" data-lang="zh" hidden>🧠 编程 • 人工智能 • 设计</span>
+        </div>
+
+        <div class="cta">
+          <a class="btn primary" href="{{ url_for('about') }}">
+            <span class="lang-content" data-lang="en">Learn more about me!</span>
+            <span class="lang-content" data-lang="de" hidden>Mehr über mich erfahren!</span>
+            <span class="lang-content" data-lang="zh" hidden>关于我！</span>
+          </a>
+
+          <a class="btn primary" href="{{ url_for('project') }}">
+            <span class="lang-content" data-lang="en">Take a look at my Projects!</span>
+            <span class="lang-content" data-lang="de" hidden>Meine Projekte ansehen!</span>
+            <span class="lang-content" data-lang="zh" hidden>查看我的项目！</span>
+          </a>
+
+          <a class="btn primary" href="{{ url_for('contact') }}">
+            <span class="lang-content" data-lang="en">Leave a Message for me!</span>
+            <span class="lang-content" data-lang="de" hidden>Hinterlasse mir eine Nachricht!</span>
+            <span class="lang-content" data-lang="zh" hidden>请给我留言！</span>
+          </a>
+        </div>
+      </div>
+
+      <aside class="card profile">
+        <div class="profile-header">
+          <div class="avatar">
+            <img src="{{ url_for('static', filename='image_20251231172514_1_1.jpg') }}" alt="Avatar">
+          </div>
+
+          <div class="profile-text">
+            <strong class="lang-content" data-lang="en" >Aaron S</strong>
+            <strong class="lang-content" data-lang="de" >Aaron S</strong>
+            <strong class="lang-content" data-lang="zh">Aaron S</strong>
+            <div class="muted lang-content" data-lang="en">Novice Developer</div>
+            <div class="muted lang-content" data-lang="de">Anfänger-Entwickler</div>
+            <div class="muted lang-content" data-lang="zh">初级开发者</div>
+          </div>
+        </div>
+          <br></br>
+        <div class="kv">
+          <div class="lang-content" data-lang="en"><span>My Public Email: </span><strong>dragon44329864@gmail.com</strong></div>
+          <div class="lang-content" data-lang="de"><span>Mein öffentliche E-mail-Adresse: </span><strong>dragon44329864@gmail.com</strong></div>
+          <div class="lang-content" data-lang="zh"><span>我的公众邮箱: </span><strong>dragon44329864@gmail.com</strong></div>
+          <div class="lang-content" data-lang="en"><span>Hobbys: </span><strong> Playing video games 24/7, build random projects and chill</strong></div>
+          <div class="lang-content" data-lang="de"><span>Hobbys: </span><strong> 24/7 zocken, einfach random Projekte bauen und chillen</strong></div>
+          <div class="lang-content" data-lang="zh"><span>爱好:</span><strong> 玩游戏, 在空闲的时间里会编一些程序，当然我更喜欢躺平.</strong></div>
+          <div class="lang-content" data-lang="en"><span>Status: </span><strong>Available</strong></div>
+          <div class="lang-content" data-lang="de"><span>Status: </span><strong>Verfügbar</strong></div>
+          <div class="lang-content" data-lang="zh"><span>状态: </span><strong>可联系</strong></div>
+        </div>
+
+        <div class="chips">
+          <a class="chip" href="https://github.com/Fatelexe">GitHub</a>
+          <a class="chip" href="https://discord.com/users/826025385686859796">Discord</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="grid">
+      <div class="card" id="projects">
+        <h2 class="lang-content" data-lang="en">My Projects</h2>
+        <h2 class="lang-content" data-lang="de" hidden>Meine Projekte</h2>
+        <h2 class="lang-content" data-lang="zh" hidden>我的项目</h2>
+        <ul class="list">
+          <li class="lang-content" data-lang="en">
+            <b>Snakes</b> — first game I built (turtle module).
+          </li>
+          <li class="lang-content" data-lang="de" hidden>
+            <b>Snakes</b> — mein erstes Spiel (Turtle-Modul).
+          </li>
+          <li class="lang-content" data-lang="zh" hidden>
+            <b>Snakes</b> — 我制作的第一个游戏（turtle 模块）。
+          </li>
+
+          <li class="lang-content" data-lang="en">
+            <b>Movies-fav-website</b> — My first public website.
+          </li>
+          <li class="lang-content" data-lang="de" hidden>
+            <b>Movies-fav-website</b> — Meine erste veröffentlichte Webseite.
+          </li>
+          <li class="lang-content" data-lang="zh" hidden>
+            <b>Movies-fav-website</b> — 我的第一个公开网站。
+          </li>
+              <li class="lang-content" data-lang="en">
+            <b>Resource_calculator_v2</b> — My first solo project, an app that can store and calculate resources..
+          </li>
+          <li class="lang-content" data-lang="de" hidden>
+            <b>Resource_calculator_v2</b> — Mein erstes selbst gemachtes Projekt, eine App zum Speichern und Berechnen von Ressourcen.
+          </li>
+          <li class="lang-content" data-lang="zh" hidden>
+            <b>资源计算器v2</b> — 我的第一个个人项目，一个可以存储并计算资源的应用程序。。
+          </li>
+          </li>
+            <li class="lang-content" data-lang="en">
+            <b>Self Intro Website(This!)</b> — My personal website. Published on 31/12/2025 as the final project to conclude 2025.
+          </li>
+          <li class="lang-content" data-lang="de" hidden>
+            <b>Selbstvorstellungs-Website(dieser!)</b> — Meine eigene Website!, veröffentlicht am 31-12-2025 als letztes project von 2025 zum Abschluss 2025.
+          </li>
+          <li class="lang-content" data-lang="zh" hidden>
+            <b>个人介绍网站（就是这个！</b> — 我的个人网站，于 2025 年 12 月 31 日发布，为2025画上完美的句号。
+          </li>
+          <li class="lang-content" data-lang="en">
+            <b>Future</b> — To be continued...
+          </li>
+          <li class="lang-content" data-lang="de" hidden>
+            <b>Zukunft</b> — Wird fortgesetzt...
+          </li>
+          <li class="lang-content" data-lang="zh" hidden>
+            <b>未来</b> — 下一个项目是……
+        </ul>
+      </div>
+      <div class="card" id="skills">
+        <h2 class="lang-content" data-lang="en">Skills</h2>
+        <h2 class="lang-content" data-lang="de" hidden>Fähigkeiten</h2>
+        <h2 class="lang-content" data-lang="zh" hidden>技能</h2>
+        <div class="chips">
+          <span class="chip">Scratch</span>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip lang-content" data-lang="en">Python (Currently Learning)</span>
+          <span class="chip lang-content" data-lang="de">Python (Lerne ich gerade)</span>
+          <span class="chip lang-content" data-lang="zh">Python (正在学习)</span>
+          <span class="chip lang-content" data-lang="en">Blender (Next)</span>
+          <span class="chip lang-content" data-lang="de">Blender (Nächstes)</span>
+          <span class="chip lang-content" data-lang="zh">Blender (下一个学习)</span>
+        </div>
+      </div>
+
+      <div class="card" id="contact">
+        <h2 class="lang-content" data-lang="en">Leave me a Message!</h2>
+        <h2 class="lang-content" data-lang="de" hidden>Hinterlasse mir eine Nachricht!</h2>
+        <h2 class="lang-content" data-lang="zh" hidden>给我留言！</h2>
+
+        <form action="{{ url_for('home') }}"id="contactForm"
+            name="sentMessage" method="post">
+          <div class="form-floating">
+              <input
+                class="form-control"
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Enter your name..."
+                data-placeholder-en="Enter your email..."
+                data-placeholder-de="Geben Sie hier Ihren Namen ein..."
+                data-placeholder-zh="在此输入您的名字..."
+                required
+              />
+            </div>
+            <div class="form-floating">
+               <input
+                 class="form-control"
+                 id="email"
+                 name="email"
+                 type="email"
+                 placeholder="Enter your email..."
+                 data-placeholder-en="Enter your email..."
+                 data-placeholder-de="Geben Sie hier Ihren Email ein..."
+                 data-placeholder-zh="在此输入您的邮箱..."
+                 required
+               />
+            </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control hide-scroll"
+                id="message"
+                name="message"
+                placeholder="Enter your message here..."
+                data-placeholder-en="Enter your message here..."
+                data-placeholder-de="Geben Sie hier Ihre Nachricht ein..."
+                data-placeholder-zh="在此输入您的留言..."
+                required
+                style="
+                  height: 6rem;
+                  max-height: 16rem;
+                  resize: none;
+                  overflow-y: auto;
+                "
+                oninput="autoResize(this)"
+              ></textarea>
+            </div>
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                <div class="alert alert-success">
+                  {{ messages[0] }}
+                </div>
+              {% endif %}
+            {% endwith %}
+            <button
+              class="btn btn primary text-uppercase"
+              id="submitButton"
+              type="submit"
+            >
+              <text class="lang-content" data-lang="en">Send</text>
+              <text class="lang-content" data-lang="de">Senden</text>
+              <text class="lang-content" data-lang="zh">发送！</text>
+            </button>
+        </form>
+      </div>
+    </section>
+    <div class="lang-switch">
+      <button class="lang-btn btn" onclick="setLang('en')">EN</button>
+      <button class="lang-btn btn" onclick="setLang('de')">DE</button>
+      <button class="lang-btn btn" onclick="setLang('zh')">中文</button>
+    </div>
+    <footer>
+      © <span id="year"></span>
+        Aaron S • Published on 31/12/2025
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script>
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+
+    document.querySelectorAll(".lang-content").forEach(el => {
+      el.hidden = el.dataset.lang !== lang;
+    });
+    document.querySelectorAll("[data-placeholder-en]").forEach(el => {
+      el.placeholder = el.dataset["placeholder" + document.documentElement.lang.charAt(0).toUpperCase() + document.documentElement.lang.slice(1)];
+    });
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+      btn.classList.toggle("active", btn.textContent.includes(lang.toUpperCase()) || btn.textContent === "中文" && lang === "zh");
+    });
+
+    localStorage.setItem("site-lang", lang);
+  }
+
+  // Remember language on reload
+  const savedLang = localStorage.getItem("site-lang") || "en";
+  setLang(savedLang);
+</script>
+</body>
+</html>

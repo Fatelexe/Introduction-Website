@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <title>Aaron — Verify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<button
+  type="button"
+  class="rick-btn"
+  onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank')"
+>
+    DONT CLICK ON THIS</button>
+<style>
+  .rick-btn {
+    padding: 1px 2px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    color: white;
+    background: linear-gradient(135deg, #ff2aa1, #7c3aed);
+  }
+</style>
+<h6 style="color: green">
+    839<span style="color: blue;">4726</span>150847392615<span style="color: red;">0487</span>29361504872
+    5901<span style="color: purple;">3746</span>50<span style="color: pink;">1928</span>374650192<span style="color: cyan;">83746</span>50198
+    274650<span style="color: pink;">9182</span>73465091<span style="color: blue;">8273</span>465091827346
+    9182<span style="color: blue;">7364</span>509182736450918<span style="color: purple;">2736</span>4509182
+    4639201<span style="color: cyan;">7463</span>92017463920174639201746
+    7501982736450<span style="color: pink;">2110</span>98273645019827364
+    3847<span style="color: cyan;">5610</span>29384756102938475610<span style="color: purple;">2938</span>47
+    602938475<span style="color: cyan;">6102</span>938475610293847561029
+    918374<span style="color: red;">6501</span>928374650192837465019283
+    47<span style="color: cyan;">2938</span>5610293847561029384756102938
+    9473628194057362819405736281<span style="color: pink;">9405</span>73
+    6029481736<span style="color: cyan;">5029</span>48173650294817365029
+    18374650291<span style="color: purple;">8374</span>6502918374650291837
+    764<span style="color: red;">5029</span>183746502918374650291837465
+    295018374650291837465029183<span style="color: blue;">7465</span>029
+    8374<span style="color: blue;">6502</span>918374<span style="color: red;">6502</span>9183746502911029
+    394857<span style="color: purple;">6102</span>938475<span style="color: pink;">6102</span>93847561029384
+    65<span style="color: red;">0291</span>8374<span style="color: blue;">6502</span>918<span style="color: red;">3746</span>5029183746502
+    91<span style="color: pink;">8374</span>650<span style="color: purple;">2918</span>374650291837465029183
+    50291<span style="color: blue;">8374</span>6502918374650291837<span style="color: pink;">4650</span>29<br></br><span class="lang-content" data-lang="en" style="color: white">
+  You think you got the code?
+</span>
+<span class="lang-content" data-lang="en" style="color: pink">
+  text me with the code for access
+</span>
+
+<span class="lang-content" data-lang="de" style="color: white">
+  Denkst du, du hast den Code?
+</span>
+<span class="lang-content" data-lang="de" style="color: pink">
+  schreib mir den Code für den Zugriff
+</span>
+
+<span class="lang-content" data-lang="zh" style="color: white">
+  你觉得你拿到代码了吗？
+</span>
+<span class="lang-content" data-lang="zh" style="color: pink">
+  把代码发给我以获得访问权限
+</span>
+</h6>
+<body class="page">
+     <main class="main-center">
+         <form method="POST"  class="verify-form text-center">
+             <h1 class="never">
+                 <span class="line lang-content" data-lang="en" style="color: red">
+                     You were never invited.
+                 </span>
+                 <span class="line lang-content" data-lang="de" style="color: red">
+                     Du wurdest nie eingeladen.
+                 </span>
+                 <span class="line lang-content" data-lang="zh" style="color: red">
+                     你从未被邀请。
+                 </span>
+
+                 <span class="line lang-content" data-lang="en" style="color: green">
+                    Unless you already know.
+                 </span>
+                 <span class="line lang-content" data-lang="de" style="color: green">
+                   Es sei denn, du weißt es bereits.
+                 </span>
+                 <span class="line lang-content" data-lang="zh" style="color: green">
+                   除非你已经知道。
+                 </span>
+             </h1>
+             <h2>
+                 <span style="color:pink">D</span>
+                 <span style="color:purple">+</span>
+                 <span style="color:pink">M</span>
+                 <span style="color:purple">+</span>
+                 <span style="color:pink">?</span>
+             </h2>
+             {{ form.hidden_tag() }}
+             <input type="hidden" name="lang" id="langInput">
+             <label class="form-label" style="color: #404040">
+                 {{ form.password.label }}
+             </label>
+             {{ form.password(class="form-control text-center mb-3") }}
+             {% with messages = get_flashed_messages(with_categories=true) %}
+               {% if messages %}
+                 {% for category, message in messages %}
+                   <div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
+                       {{ message }}
+                       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                   </div>
+                 {% endfor %}
+               {% endif %}
+             {% endwith %}
+             {{ form.button(class="btn primary w-100 mt-3") }}
+         </form>
+     </main>
+    <div class="lang-switch">
+      <button type="button" class="lang-btn btn" onclick="setLang('en')">EN</button>
+      <button type="button" class="lang-btn btn" onclick="setLang('de')">DE</button>
+      <button type="button" class="lang-btn btn" onclick="setLang('zh')">中文</button>
+    </div>
+    <!-- FOOTER -->
+    <footer class="text-center muted small">
+      © <span id="year"></span> Aaron S • Published on 31/12/2025
+        <a href="{{ url_for('secret') }}">?</a>
+    </footer>
+
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    lucide.createIcons();
+  </script>
+<script>
+function setLang(lang) {
+  // save + apply lang
+  localStorage.setItem("site-lang", lang);
+  document.documentElement.lang = lang;
+
+  // update hidden input for POST
+  const langInput = document.getElementById("langInput");
+  if (langInput) langInput.value = lang;
+
+  // show/hide translated blocks
+  document.querySelectorAll(".lang-content").forEach(el => {
+    el.hidden = el.dataset.lang !== lang;
+  });
+
+  // active button
+  document.querySelectorAll(".lang-btn").forEach(btn => {
+    const t = btn.textContent.trim();
+    const isActive =
+      (lang === "en" && t === "EN") ||
+      (lang === "de" && t === "DE") ||
+      (lang === "zh" && t === "中文");
+    btn.classList.toggle("active", isActive);
+  });
+
+  // ✅ reload page with ?lang=...
+  const url = new URL(window.location.href);
+  url.searchParams.set("lang", lang);
+  window.location.href = url.toString();
+}
+
+// only run once on load (DON'T call setLang here or it will reload forever)
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("site-lang") || "en";
+
+  // set lang without reloading
+  document.documentElement.lang = savedLang;
+  const langInput = document.getElementById("langInput");
+  if (langInput) langInput.value = savedLang;
+
+  document.querySelectorAll(".lang-content").forEach(el => {
+    el.hidden = el.dataset.lang !== savedLang;
+  });
+
+  document.querySelectorAll(".lang-btn").forEach(btn => {
+    const t = btn.textContent.trim();
+    const isActive =
+      (savedLang === "en" && t === "EN") ||
+      (savedLang === "de" && t === "DE") ||
+      (savedLang === "zh" && t === "中文");
+    btn.classList.toggle("active", isActive);
+  });
+});
+</script>
+</body>
+</html>
+
