@@ -15,3 +15,7 @@ A multi-language personal portfolio website built with Flask, HTML, CSS, and Jav
 - Python (Flask)
 - HTML / CSS
 - JavaScript
+
+#2/1/2026
+- no downtime
+- faster boot
